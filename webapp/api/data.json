@@ -1,0 +1,14 @@
+{
+    "Patients": [
+        {
+            "id": 1,
+            "name": "Ciobanu Vlad",
+            "age": 24
+        },
+        {
+            "id": 2,
+            "name": "Patient 2",
+            "age": 25
+        }
+    ]
+}

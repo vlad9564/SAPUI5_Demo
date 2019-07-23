@@ -1,0 +1,36 @@
+<mvc:View controllerName="com.cerner.interns.SAPUI5_Demo.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<HBox>
+							<VBox class="firstVBox">
+								<Label text="Patient name" labelFor="idInputName" />
+								<Input width="50%" id="idInputName"></Input>
+								<Label text="Patient age" labelFor="idInputAge" />
+								<Input width="50%" id="idInputAge"></Input>
+								
+								
+								<Button text="Add patient" press="onAddPatient"></Button>
+							</VBox>
+							<VBox>
+								<List items="{patients>/Patients}" headerText="Patients">
+									<items>
+										<CustomListItem>
+											
+											<Text text="{patients>name}"></Text>
+											<Button text="Don't press me" press="press"></Button>
+											
+											<Text text="Age: {patients>age}"></Text>
+										</CustomListItem>
+									</items>
+								</List>
+							</VBox>
+						</HBox>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
